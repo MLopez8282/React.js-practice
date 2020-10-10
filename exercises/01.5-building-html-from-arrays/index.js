@@ -2,7 +2,23 @@ import React from "react"; //Main React.js library
 import ReactDOM from "react-dom"; //we use ReactDOM to render into the DOM
 
 // only update the value of this array
-const navlinkItems = [];
+const navlinkItems = [
+	<li className="nav-item" key="0">
+		<a className="nav-link" href="#">
+			{navlinkItems}
+		</a>
+	</li>,
+	<li className="nav-item" key="1">
+		<a className="nav-link" href="#">
+			{navlinkItems}
+		</a>
+	</li>,
+	<li className="nav-item" key="2">
+		<a className="nav-link" href="#">
+			{navlinkItems}
+		</a>
+	</li>
+];
 
 const content = <ul className="nav">{navlinkItems}</ul>;
 
